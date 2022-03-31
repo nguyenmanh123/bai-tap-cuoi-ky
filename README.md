@@ -1,1 +1,2 @@
-# bai-tap-cuoi-ky
+# truyen
+Còn phần Admin
