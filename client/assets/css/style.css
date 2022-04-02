@@ -1,0 +1,182 @@
+
+
+
+.container {
+    margin-top: 30px;
+}
+
+.container__banner {
+
+}
+
+.banner__item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    transform: scale(1, 1);
+    transition: all 0.6s ease-out;
+    border-radius: 10px;
+}
+
+.banner__item:hover {
+    transform: scale(1.04, 1.04);
+}
+
+.banner__item--img {
+    padding-top: 74%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+    object-fit: cover;
+    top: 0;
+}
+
+.banner__item--hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: var(--primary-color-rgba);
+    border-radius: 10px;
+    display: none;
+}
+
+.banner__item:hover .banner__item--hover {
+    display: flex;
+}
+
+.banner__item--info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+.item__info--heading {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.item__info--description {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Slideshow container */
+.container__slider {
+    max-width: 1000px;
+    position: relative;
+    margin: 20px auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.container__content {
+    padding-top: 100px;
+}
+
+.container__content--heading {
+    padding: 10px;
+    color: rgb(108, 202, 240);
+}
+
+.content__heading--text {
+    padding-left: 6px;
+}
+
+.container__content--body {
+
+}
+
+.content__item {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    background-color: #fff;
+    position: relative;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.content__item--img {
+    padding-top: 130%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.content__item--title {
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content__item--chapter {
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content__item--trending {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    background-color: var(--primary-color);
+    color: #ffff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 2px 4px;
+
+}
+
+.content__item--trending::before {
+    position: absolute;
+    content: "";
+    border-top: 3px solid var(--primary-color);
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+    bottom: -3px;
+    left: 0;
+
+}
+
+.item__trending--icon {
+
+}
+
+.item__trending--text {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+
