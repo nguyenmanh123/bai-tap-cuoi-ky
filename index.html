@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./common/fonts/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="./common/css/grid.css">
     <link rel="stylesheet" href="./common/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./client/assets/css/style.css">
     <title>Trang chủ</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
                     </div>
         
                     <div class="header__account">
-                        <a title="Truy cập trang Admin" href="./admin/admin.html" class="header__account--link">
+                        <a title="Truy cập trang Admin" href="./admin/index.html" class="header__account--link">
                             <span class="header__account--btn">Đăng nhập</span>
                         </a>
                         <a href="#" class="header__account--link">
@@ -77,7 +77,27 @@
                             <a href="#" class="header__menu--item__link">Thảo luận</a>
                         </li>
                         <li class="header__menu--item">
-                            <a href="#" class="header__menu--item__link">Xem nhiều nhất</a>
+                            <span href="#" class="header__menu--item__link">
+                                Xem nhiều nhất
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                            <ul class="header__menu--subnav">
+                                <li class="menu--subnav__item">
+                                    <a href="#" class="menu--subnav__item--link">Trinh thám</a>
+                                </li>
+                                <li class="menu--subnav__item">
+                                    <a href="#" class="menu--subnav__item--link">Manga</a>
+                                </li>
+                                <li class="menu--subnav__item">
+                                    <a href="#" class="menu--subnav__item--link">Doraemon</a>
+                                </li>
+                                <li class="menu--subnav__item">
+                                    <a href="#" class="menu--subnav__item--link">Thám tử lừng danh - Connan</a>
+                                </li>
+                                <li class="menu--subnav__item">
+                                    <a href="#" class="menu--subnav__item--link">Ngôn tình</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header__menu--item">
                             <a href="#" class="header__menu--item__link">Tác giả</a>
@@ -91,6 +111,7 @@
             <div class="container">
                 <div class="grid wide col">
                     
+
                     <div class="container__pagination">
                         <ul class="pagination home-pagination">
                             <li class="pagination-item">
